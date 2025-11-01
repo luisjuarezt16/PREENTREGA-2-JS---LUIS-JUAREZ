@@ -12,7 +12,7 @@ const btnlog = document.getElementById ("btnlog")
 
 btnlog.addEventListener ("click", ()=> {
    
-    location.href = "./pages/login.html"
+    location.href = "../pages/login.html"
 
 })
 
