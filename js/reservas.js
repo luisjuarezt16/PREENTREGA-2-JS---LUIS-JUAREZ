@@ -11,7 +11,7 @@ const borrartodo = document.getElementById ("borrartodo")
 
 crearnuevo.addEventListener ("click", () => {
 
-    location.href = "/index.html"
+    location.href = "../index.html"
 
 })
 
