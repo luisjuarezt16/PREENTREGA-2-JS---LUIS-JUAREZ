@@ -39,7 +39,6 @@ function mostrarReservas() {
 
     for (let i = 0; i < reservas.length; i++) {
         const botonBorrar = document.getElementById(`btnborrar-${i}`)
-        const botonEditar = document.getElementById(`btneditar-${i}`)
 
         botonBorrar.addEventListener("click", () => {
         let nuevasReservas = []
