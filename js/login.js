@@ -7,7 +7,7 @@ const btnlogin = document.getElementById ("btningresar")
 btnlogin.addEventListener ("click", () => {
 
     if (usuario.value === "admin" && contraseña.value ==="12345") {
-        location.href = "/pages/reservas.html"
+        location.href = "../pages/reservas.html"
     }
 
 })
