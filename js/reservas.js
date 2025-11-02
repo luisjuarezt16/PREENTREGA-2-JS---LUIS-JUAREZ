@@ -31,8 +31,9 @@ function mostrarReservas() {
                     <p>Hora: ${r.hora}</p>
                     <p>Problema: ${r.problema}</p>
                     <button type="button" id="btnborrar-${i}" class="btnlog col-lg-4 mb-5">BORRAR RESERVA</button>
+                    <button type="button" id="botonEditar-${i}" class="btnlog col-lg-4 mb-5">EDITAR</button>
                 </div>
-
+            </div>
         `
     })
 
@@ -48,9 +49,20 @@ function mostrarReservas() {
             }
         }
 
+
+      
+
         reservas = nuevasReservas
         localStorage.setItem("reservas", JSON.stringify(reservas))
         mostrarReservas()
+        })
+
+        
+
+        botonEditar.addEventListener ("click", () => {
+            localStorage.setItem("reservaElegida", i)
+            location.href = "../pages/editar.html"
+
         })
 
 
