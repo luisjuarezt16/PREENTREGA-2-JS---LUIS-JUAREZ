@@ -30,7 +30,7 @@ function mostrarReservas() {
                     <p>Fecha: ${r.fecha}</p>
                     <p>Hora: ${r.hora}</p>
                     <p>Problema: ${r.problema}</p>
-                    <button type="button" id="btnborrar-${i}" class="btnlog col-lg-4 mb-5">BORRAR RESERVA</button>
+                    <button type="button" id="btnborrar-${i}" class="btnlog col-lg-4 mb-5">BORRAR</button>
                     <button type="button" id="botonEditar-${i}" class="btnlog col-lg-4 mb-5">EDITAR</button>
                 </div>
             </div>
