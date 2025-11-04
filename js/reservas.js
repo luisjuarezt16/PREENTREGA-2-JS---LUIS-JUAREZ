@@ -1,17 +1,17 @@
-let reservas = JSON.parse(localStorage.getItem('reservas')) || [];
+let reservas = JSON.parse(localStorage.getItem('reservas')) || []
 
-const contenedor = document.getElementById('contenedor-reservas');
+const contenedor = document.getElementById('contenedor-reservas')
 
-const crearnuevo = document.getElementById('crearreserva');
+const crearnuevo = document.getElementById('crearreserva')
 
-const borrartodo = document.getElementById('borrartodo');
+const borrartodo = document.getElementById('borrartodo')
 
 crearnuevo.addEventListener('click', () => {
-  location.href = '../index.html';
-});
+  location.href = '../index.html'
+})
 
 function mostrarReservas() {
-  contenedor.innerHTML = '';
+  contenedor.innerHTML = ''
 
   reservas.forEach((r, i) => {
     contenedor.innerHTML += `
@@ -26,8 +26,8 @@ function mostrarReservas() {
                     <button type="button" id="btneditar-${i}" class="btnlog col-lg-4 mb-5">EDITAR RESERVA</button>
                 </div>
 
-        `;
-  });
+        `
+  })
 
   for (let i = 0; i < reservas.length; i++) {
     const botonBorrar = document.getElementById(`btnborrar-${i}`);

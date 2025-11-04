@@ -77,5 +77,14 @@ button:hover {
 }
 
 
+.imagen-reserva {
+    margin-top: 20px;
+    width: auto;          /* hace la imagen más pequeña */
+    height: 650px;        /* mantiene proporción */
+    border-radius: 10px; /* opcional, bordes redondeados */
+}
 
+.fondo-reserva{
+    background-color: #740404;
+}
 
