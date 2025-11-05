@@ -47,7 +47,15 @@
         "usuario": "richelvargas",
         "contraseña": 54321
 
+    },
+
+    {
+        "id": 7,
+        "usuario": "sebastianlinarez",
+        "contraseña": 12345
+
     }
+
 
 
 ]
